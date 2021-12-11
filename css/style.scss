@@ -1,0 +1,70 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import "_null";
+
+body {
+	line-height: 1;
+	background-color: #1a1a1a;
+	font-size: 30px;
+}
+
+a {
+	color: inherit;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+/* ------------------------------ */
+
+.block {
+	margin: 30px;
+	width: 500px;
+
+	// .block__span
+	&__span {
+		display: none;
+		&.active {
+			display: block;
+		}
+	}
+	// .block__button
+	&__button {
+		transition: 150ms;
+		background-color: #1a1a1a;
+		font-size: 20px;
+		color: rosybrown;
+		cursor: pointer;
+		&.button__none {
+			display: none;
+		}
+		&:hover {
+			color: brown;
+		}
+		&:active {
+			color: #ffffff;
+		}
+	}
+	&__button2 {
+		transition: 150ms;
+		background-color: #1a1a1a;
+		font-size: 20px;
+		color: rosybrown;
+		cursor: pointer;
+		&:hover {
+			color: brown;
+		}
+		&:active {
+			color: #ffffff;
+		}
+		display: none;
+		&.button__active {
+			display: block;
+		}
+	}
+}
